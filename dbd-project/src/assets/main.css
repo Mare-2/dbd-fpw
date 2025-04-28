@@ -1,0 +1,60 @@
+@import './base.css';
+
+body{
+    background:linear-gradient(to bottom, var(--primary)35%, var(--secondary)100%); 
+}
+
+
+
+@media only screen and (min-width: 768px){
+
+    nav{
+        background: var(--secondary);
+        text-align:center;
+        position: sticky;
+        top: 0px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+
+    nav{
+        background: var(--secondary);
+        text-align:center;
+        top: 0px;   
+    }
+  
+}
+    
+    
+
+
+h1, h2, h3{
+    color: var(--primary);
+}
+
+header{
+    background:radial-gradient(circle, var(--primary)35%, var(--secondary)100%) ;
+    text-align: center;
+}
+
+footer{
+    background:radial-gradient(circle, var(--primary)35%, var(--secondary)100%) ;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+    .homeReview {
+        display: flex;
+        flex-direction: row; /* Imposta la disposizione in colonne orizzontali */
+        gap: 10px; /* Spazio tra le colonne */
+      }
+      
+    .column {
+        flex: 1; /* Ogni colonna occupa una parte uguale dello spazio disponibile */
+        padding: 20px;
+        border: 1px solid #ccc; /* Bordo per visualizzazione */
+    }
+    
+}
